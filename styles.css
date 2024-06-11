@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #06eb8b;
+}
+
+button#toggleButton {
+  display: block;
+  margin: 20px auto; /* Center the button horizontally with some margin */
+  width: 40px; /* Make it square */
+  height: 40px; /* Make it square */
+  font-size: 24px; /* Adjust font size for the icon */
+  background-color: #7323a8;
+  color: #2843bd;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  transition: opacity 0.3s ease; /* Add transition for hiding */
+  border-radius: 50%; /* Make the button circular */
+}
+
+button#toggleButton.hidden {
+  opacity: 0; /* Hide the button */
+  pointer-events: none; /* Disable button interactions */
+}
+
+.dashboard {
+  position: fixed;
+  top: 100px; /* Adjust top value to move dashboard below the image */
+  left: 0;
+  width: 250px;
+  height: calc(100% - 100px); /* Adjust height to account for the top offset */
+  background-color: #1162b3;
+  color: #e00909;
+  transform: translateX(-100%); /* Hide the dashboard off-screen */
+  transition: transform 0.3s ease;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(88, 240, 146, 0.5);
+}
+
+.dashboard.open {
+  transform: translateX(0); /* Slide in */
+}
+
+.dashboard h2 {
+  margin-top: 0;
+}
+
+.dashboard p {
+  margin-bottom: 20px;
+}
+
+.dashboard-button {
+  display: block;
+  width: 100%; /* Full width of the dashboard */
+  padding: 10px;
+  margin: 0 0 10px 0; /* Remove horizontal margins */
+  background-color: #28A745;
+  color: #06eb8b;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dashboard-button:hover {
+  background-color: #c40303;
+}

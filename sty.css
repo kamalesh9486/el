@@ -1,0 +1,180 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('nn.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: rgba(192, 186, 241, 0.9);
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+button#toggleButton {
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button#toggleButton:hover {
+  background-color: #00509E;
+}
+
+.dashboard {
+  position: fixed;
+  top: 200px; /* Adjusted to start below the header */
+  left: 0;
+  width: 250px;
+  background-color: rgba(17, 98, 179, 0.8); /* Semi-transparent background */
+  color: #ffffff;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(88, 240, 146, 0.5);
+  display: none; /* Hidden by default */
+  z-index: 999; /* Ensure it's above other elements */
+}
+
+.dashboard.open {
+  display: block; /* Show when toggled */
+}
+
+.dashboard h2 {
+  margin-top: 0;
+  border-radius: 5px;
+}
+
+.dashboard-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 0 0 10px 0;
+  background-color: rgba(192, 186, 241, 0.9);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.dashboard-button:hover {
+  background-color: #71eb8c;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #003366;
+  padding: 10px 15px;
+}
+
+nav ul li a:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.section {
+  padding: 60px 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.hero .btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.hero .btn:hover {
+  background-color: #218838;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #00509E;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .social-media {
+  list-style-type: none;
+  margin: 20px 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer .social-media li {
+  margin: 0 10px;
+}
+
+footer .social-media li a img {
+  width: 24px;
+  height: 24px;
+}
